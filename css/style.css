@@ -37,7 +37,7 @@ p {
 
 body {
     font-family: Arial;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     background-repeat: no-repeat;
 }
 
@@ -50,7 +50,7 @@ body {
     #obj2{
         display: block;}
         #obj1{
-            display: none;}
+            display: block;}
    
    
    
@@ -133,7 +133,6 @@ nav li {
 
 /* HEADER */
 header {   
-    
     
     background-image: url('../images/back.jpeg');
 
