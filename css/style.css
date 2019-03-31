@@ -1,16 +1,29 @@
-html, body{
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+html,
+body {
     background-color: rosybrown;
-   /* margin: 0; no hace falta por el normalize*/
+    /* margin: 0; no hace falta por el normalize*/
     /*haciendo esto 1 rem son 10 px*/
-    font-size:62.5%;
+    font-size: 62.5%;
     /* Aquí irán los estilos que añada Jose Antonio*/
-/* ya estoy aquí wey */
+    /* ya estoy aquí wey */
 }
-h1{
-    font-size:3.2rem; /*esto son 22 px*/
+
+h1 {
+    font-size: 3.2rem;
+    /*esto son 22 px*/
 }
-p{
-    font-size:1.6rem;
+
+p {
+    font-size: 1.6rem;
 }
 
 
@@ -21,95 +34,135 @@ p{
 /*****************************************************     cabecera          **********************************************************************/
 
 
-/* Aquí irán los estilos que añada David*/
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-     url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
-     url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-     url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-  }
-  body{
+
+body {
     font-family: Arial;
     line-height: 1.6;
     background-repeat: no-repeat;
-    background-image: url('../images/back.jpeg');
-  }
-  /* ----NAV---- */
-  nav{
+}
+
+/* ----NAV---- */
+
+#boton3{
+    /* height: -100%; */
+    display: none;}
+    
+    #obj2{
+        display: block;}
+        #obj1{
+            display: none;}
+   
+   
+   
+
+
+
+
+nav {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: sticky;
-    top:0;
+    top: 0;
     padding-left: 1rem;
     background-color: rgba(0, 195, 255, 0.267);
     z-index: 70;
-    background-size: cover;
+    /* background-size: cover; */
     background-image: url('../images/nav.png');
-  }
-   a:hover{
+}
+
+a:hover {
     text-decoration: none;
-  }
-  .logo img{
-    padding:0.5rem 0 0.5rem;
+    /* background:red; */
+}
+
+.logo img {margin: 0;
+    padding: 0.5rem 0 0.5rem;
     display: block;
-    text-shadow:2px 2px 0.1rem white,3px 5px 0.5rem white,-2px -2px 0.4rem white;
+    text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
     height: 5rem;
-  }
-  .logo p{
+    margin:0 auto;
+}
+
+.logo p {
     margin: 0;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
     line-height: 1;
     font-weight: bold;
     color: #141939;
-    text-shadow:2px 2px 0.1rem white,3px 5px 0.5rem white,-2px -2px 0.4rem white;
-    text-align: center
-  }
-  nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      margin: 0 auto; 
-    }
-  nav li {
-      font-style: italic;
-      font-size: 1.4rem;
-      color: white;
-      text-shadow:2px 2px 0.1rem black,3px 5px 0.5rem black,-2px -2px 0.4rem black;
-      display: block;
-      margin-left: 45px;
-      padding-top: 2.5rem;
-      list-style: none;
-      position: relative;
-    }
-    .socialMedia{
-      
-      padding-top: 3rem;
-      padding-right: 1.8rem;
-    }
-    .socialMedia img{
-      width: 2.5rem;
-    }
-  
-    /* HEADER */
-    header{
-      color: white;
-      padding:3rem 4rem 6rem 4rem;
-    }
-    header h1{
-      margin-left: 30%;
-      font-weight: bold;
-      font-size: 4rem;
-    }header p{
-      margin-left: 30%;
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-    }
-    header button{
-    all:unset;
+    text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
+    text-align: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+nav li {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
+    display: block;
+    margin-left: 45px;
+    padding-top: 2.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.socialMedia {
+    
+    background-color: red;
+    
+    
+    /* padding-top: 3rem;
+    padding-right: 1.8rem; */
+}
+
+.socialMedia img {
+    width: 2.5rem;
+    
+}
+
+/* HEADER */
+header {   
+    
+    
+    background-image: url('../images/back.jpeg');
+
+    color: white;
+    padding: 3rem 4rem 6rem 4rem;
+
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+header h1 {
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+header p {
+    margin-left: 30%;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+header button {
+    all: unset;
     display: block;
     color: black;
     background-color: #fef200;
@@ -118,10 +171,10 @@ p{
     font-size: 1.5rem;
     width: 20%;
     margin-left: 43%;
-    padding:0.4rem 0.1rem 0.4rem 0.1rem;
-    }
+    padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+}
 
-    /**********************************           cabecera      ****************************************************************/
+/**********************************           cabecera      ****************************************************************/
 
 
 /*************************************    DESTINOS         ****************************************************/
@@ -138,40 +191,54 @@ p{
     flex-wrap: wrap;
     align-content: center;
 }
-.destinos div{
+
+.destinos div {
     padding: 2rem 0.5rem 1rem 0.5rem;
 }
 
-.a{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('../images/beijing.JPG');
-  height: 18em;
-  width: 20em;
-  position: relative;
-  z-index: 1;
+.a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/beijing.JPG');
+    height: 18em;
+    width: 20em;
+    position: relative;
+    z-index: 1;
 }
-.a p, .b p, .c p, .d p, .e p, .f p {
+
+.a p,
+.b p,
+.c p,
+.d p,
+.e p,
+.f p {
     font-size: 1.2em;
     text-align: left;
     padding: 0.5em 0 0.5em 0.5em;
-    top:-1.65em;
-    left: -0.42em;;
+    top: -1.65em;
+    left: -0.42em;
+    ;
     margin: 0 auto;
     position: relative;
-    color :white;
+    color: white;
     background-color: #141939;
     z-index: 2;
 }
-.a h3, .b h3, .c h3, .d h3, .e h3, .f h3{
+
+.a h3,
+.b h3,
+.c h3,
+.d h3,
+.e h3,
+.f h3 {
     font-size: 2em;
     font-weight: bold;
-    top:-2.55em;
+    top: -2.55em;
     right: -3.1em;
     width: 40%;
     margin: 0 auto;
     position: relative;
-    color:black;
+    color: black;
     padding: 0.5em;
     background-color: #fef200;
     z-index: 3;
@@ -185,7 +252,7 @@ p{
     width: 20em;
     position: relative;
     z-index: 1;
-  }
+}
 
 .c {
     background-size: cover;
@@ -197,7 +264,7 @@ p{
     z-index: 1;
 }
 
-  .d{
+.d {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../images/madrid.JPG');
@@ -205,9 +272,9 @@ p{
     width: 20em;
     position: relative;
     z-index: 1;
-  }
+}
 
-  .e{
+.e {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../images/new_york.JPG');
@@ -215,8 +282,9 @@ p{
     width: 20em;
     position: relative;
     z-index: 1;
-  }
-  .f{
+}
+
+.f {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../images/tokyo.JPG');
@@ -224,12 +292,13 @@ p{
     width: 20em;
     position: relative;
     z-index: 1;
-  }
+}
 
 .imagenes_destinos {
     display: block;
     position: relative;
-    width: 20em; height: 18em;
+    width: 20em;
+    height: 18em;
     z-index: 0;
 }
 
@@ -273,16 +342,16 @@ p{
 .quien h1 {
     font-weight: bold;
     font-style: italic;
- font-size: 1.6rem;
+    font-size: 1.6rem;
     color: darkblue;
-    
+
 
 
 }
 
 .quien p {
     color: darkblue;
-   
+
     padding: 2em;
 }
 
@@ -296,73 +365,75 @@ button {
     font-weight: bold;
     background-color: darkblue;
     color: yellow;
-    font-weight: bold;
     padding: 10px;
-
-
-
 }
-@media (max-width: 1280px) {
-.quien {
-   width: 90%;
- 
-}   
-}
+
+
+
 /*****************************        Quien somos     ****************************************************/
 
 
 
 /***********************       Contacto    *********************************************************************/
-.contact{
+.contact {
     display: flex;
     flex-direction: row;
     background-color: #fcfcfc;
     padding: 4rem 0 6rem 1.4rem
-  }
-  .contact img{
+}
+
+.contact img {
     margin-left: 9.5rem;
     display: block;
-  }
-  .barraAzul::before{
+}
+
+.barraAzul::before {
     content: '';
     display: block;
     height: 5px;
     width: 0%;
     background-color: #73adfe;
     transition: all ease-in-out 500ms;
-  }
-  .barraAzul:hover::before {
+}
+
+.barraAzul:hover::before {
     width: 83%;
-  }
-  .contactForm{
+}
+
+.contactForm {
     padding: 0 0 0 4rem;
     flex-wrap: wrap;
-  }
-  .contactForm input{
+}
+
+.contactForm input {
     font-size: 0.8rem;
     margin: 0.6rem;
     width: 40%;
     padding: 0.6rem;
-  } .contactForm textarea{
+}
+
+.contactForm textarea {
     font-size: 0.8rem;
     margin: 0.6rem;
     padding: 0.8rem;
     width: 83%;
-  }
-  .contact button{
-  all:unset;
-  font-style: italic;
-  text-align: center;
-  color: black;
-  background-color: #fef200;
-  font-size: 1.3rem;
-  width: 25%;
-  padding:0.7rem 0.1rem 0.7rem 0.5rem;
 }
-  
-  .fieldsWarning{
+
+.contact button {
+    all: unset;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    background-color: #fef200;
+    font-size: 1.3rem;
+    width: 25%;
+    padding: 0.7rem 0.1rem 0.7rem 0.5rem;
+}
+
+.fieldsWarning {
     font-size: .7rem;
-  }
+}
+
 /******************** Contacto ******************************/
 
 
@@ -370,7 +441,7 @@ button {
 
 /**************************    Footer    *********************************/
 
-footer{
+footer {
     padding: 1.5rem;
     font-size: 1.4rem;
     color: white;
@@ -378,69 +449,75 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:0 auto;
-  }
-  footer .ayuda, .informacion,.suscribete{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  }
-  .ayuda{
+    margin: 0 auto;
+}
+
+footer .ayuda,
+.informacion,
+.suscribete {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.ayuda {
     padding-left: 9.5rem;
-  }
-  .ayuda p{
+}
+
+.ayuda p {
     padding-left: 0.8rem;
-  }
-  .horario{
+}
+
+.horario {
     padding-top: 2rem;
     font-size: 0.8rem;
-  }
-  footer input{
+}
+
+footer input {
     font-size: 0.6rem;
     padding: 0.5rem;
     width: 80%;
-  }
-footer button{
-  all:unset;
-  color: black;
-  text-align: center;
-  background-color: #fef200;
-  font-size: 1.3rem;
-  width: 53%;
-  padding:0.4rem 0.1rem 0.4rem 0.1rem;
+}
+
+footer button {
+    all: unset;
+    color: black;
+    text-align: center;
+    background-color: #fef200;
+    font-size: 1.3rem;
+    width: 53%;
+    padding: 0.4rem 0.1rem 0.4rem 0.1rem;
 }
 
 @media (max-width: 1280px) {
-  .nav{
-    
-  flex-direction: column;
-  }
-footer, .contact{
-  padding: 5rem;
-  flex-direction: column;
+    .nav {
+
+        flex-direction: column;
+    }
+
+    footer,
+    .contact {
+        padding: 5rem;
+        flex-direction: column;
+    }
+
+    footer .ayuda,
+    .informacion,
+    .suscribete {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .ayuda {
+        padding-left: 0;
+    }
 }
-footer .ayuda, .informacion,.suscribete{
-  display: flex;
-  margin: 0 auto;
-  margin-top: 2rem;
-  }
-  
-  .ayuda{
-    padding-left: 0;
-  }
-}
+
 @media (max-width: 700px) {
 
-  nav{
-    font-size: 1rem;
-    flex-direction: column;
-  }
+    nav {
+        font-size: 1rem;
+        flex-direction: column;
+    }
 }
-
-
-
-
-
-
-
-

@@ -1,0 +1,246 @@
+/* @media (max-width: 1280px) {
+    .quien {
+       width: 90%;
+     
+    }  
+    
+} */
+
+
+@media/* only screen and */(max-width : 1000px) {
+
+    /* header { display: flex;
+        
+        position: sticky;
+        background-image: url('../images/back.jpeg');
+       
+        color: white;
+
+        
+    } */
+    header {   
+        display: flex;
+    
+        background-image: url('../images/back.jpeg');
+    
+        color: white;
+        padding: 3rem 4rem 6rem 4rem;
+    
+    
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    /* header h1 {
+        margin-left: 0px;
+        font-weight: bold;
+        font-size: 4rem;
+    } */
+
+    /* header p {
+        margin-left: 0px;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    } */
+
+    header button {
+        all: unset;
+        display: block;
+        color: black;
+        background-color: #fef200;
+        font-style: italic;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 20%;
+        margin-left: 0px;
+        /* padding: 0.4rem 0.1rem 0.4rem 0.1rem; */
+    }
+
+
+
+
+
+
+
+    nav {    
+
+        
+        /* align-items: flex-start; */
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        /* flex-wrap: wrap;
+        flex-direction: row; */
+        width: 50%;
+        position: sticky;
+        top: 0;
+        padding-left: 1rem;
+        background-color: rgba(0, 195, 255, 0.267);
+        z-index: 70;
+        /* background-size: cover; */
+        background-image: url('../images/nav.png');
+    }
+    
+       
+        
+
+
+ /* nav button{
+ }    */
+
+    
+nav ul {display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    background:red;;
+ 
+}
+
+
+nav li {
+    /* display: flex; */
+    
+    /* align-content:; */
+    /* align-items: center; */
+    font-style: italic;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
+    display: block;
+    margin-left: 0px;
+    padding: 1rem;
+    list-style: none;
+    /* position: relative; */
+}
+
+header li a {
+    display: flex;
+    
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content:space-around;
+}   
+  
+
+   
+   
+   
+    .socialMedia {
+        
+        padding-top: 3rem;
+        padding-right: 1.8rem;
+    }
+
+    .socialMedia img {
+        width: 2.5rem;
+    }
+
+    #boton3 {
+        /* display:block; */
+        
+        
+    }
+    /*ocultar boton al inicio*/
+    #boton3{
+        width: 100%;
+        background-color:transparent;
+        color:white;
+        display: block;}
+    #obj2{
+        display: block;}
+        #obj1{
+            display: none;}
+
+
+
+
+
+/******************* carrusell ***************************/
+*{box-sizing:border-box}
+
+/* Aquí definimos las propiedades del contenedor del slider. Recordáis el div inicial? Si os fijáis, el nombre de la clase es el mismo. */
+.slideshow-container{
+ max-width: 1000px;
+ position:relative;
+ margin:auto;
+}
+
+/* A continuación escondemos las imágenes por defecto */
+.mySlides{
+ display:none;
+}
+
+/* Añadimos los estilos para los botones de avanzar y retroceder, una vez más usando las clases que hemos definido previamente en el HTML. */
+.prev, .next{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width:auto;
+ margin-top:-22px;
+ padding:16px;
+ color:white;
+ font-weight:bold;
+ font-size:18px;
+ transition:0.6s ease;
+ border-radius:0 3px 3px 0;
+}
+
+/* Colocamos los botones a la derecha e izquierda */
+
+.next{
+ right:0;
+ border-radius:3px 0 0 3px;
+}
+
+/* Cuando pasemos el ratón por encima de ellos, les añadimos un efecto para que se oscurezca su fondo. Esto lo logramos con una propiedad CSS llamada “hover”, y definimos el color de fondo que deseamos. En este caso, usamos rgba, siglas de “red, green, blue, alpha”. Los tres primeros será el valor de cada color que, mezclados, darán el negro. Al ponerlos todos a 0 estamos indicando la ausencia de éste. El último valor es la transparencia, la cual será imperceptible porqué es muy pequeño. */
+.prev:hover, .next:hover{
+ background-color:rgba(0,0,0,0.8);
+}
+
+/* Los estilos para el texto */
+.text{
+ color:#f2f2f2;
+ font-size:15px;
+ padding:8px 12px;
+ position:absolute;
+ bottom:8px;
+ width:100%;
+ text-align:center;
+}
+
+.numbertext{
+ color:#f2f2f2;
+ font-size:12px;
+ padding:8px 12px;
+ position:absolute;
+ top:0;
+}
+
+/* Y finalmente las animaciones */
+.fade{
+ -webkit-animation-name:fade;
+ -webkit-animation-duration:1.5s;
+ animation-name:fade;
+ animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+@keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+/* Todo con CSS y HTML. */
+
+
+}
