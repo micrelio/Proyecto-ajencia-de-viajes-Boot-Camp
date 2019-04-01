@@ -43,26 +43,12 @@ body {
 
 /* ----NAV---- */
 
-#boton3 {
-    
+
+
+.movil {
     display: none;
 }
 
-#boton4 {
-    display: none;
-}
-
-#obj2 {
-    display: block;
-}
-
-#obj1 {
-    display: block;
-}
-
-#boton4 {
-    display: none;
-}
 
 
 .nav{
@@ -89,7 +75,7 @@ nav {
      align-items: center;
      flex-direction: row;
      flex-wrap: wrap;
-     background: fuchsia;
+     /* background: fuchsia; */
      justify-content:space-between;
      /* justify-content:space-around; */
     /* position: sticky; */
@@ -103,9 +89,9 @@ nav {
 
 .sel a { 
     margin:0.5vw;
-    background: tomato;
+    /* background: tomato; */
     font-style: italic;
-    font-size: 1.4vw;
+    font-size: 2.5vw;
     color: white;
     text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
     /* display: block; */
@@ -142,7 +128,7 @@ a:hover {
 
 .logo{
     background: #fef200
-    
+
 }
 .logo img {
     /* margin: 0; */
@@ -180,8 +166,8 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 header h1 {

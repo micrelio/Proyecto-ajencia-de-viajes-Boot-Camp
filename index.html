@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/movile.css" /> -->
+    <link rel="stylesheet" href="css/movile.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <title>Agenci of travels </title>
 
     <script>
         function ocultar() {
-            document.getElementById('obj1').style.display = 'none';
-            document.getElementById('obj2').style.display = 'block';
-            document.getElementById('boton4').style.display = 'none';
+            document.getElementById('sel').style.display = 'none';
+            document.getElementById('boton1').style.display = 'block';
+            document.getElementById('boton2').style.display = 'none';
         }
 
         function mostrar() {
-            document.getElementById('obj1').style.display = 'block';
-            document.getElementById('obj2').style.display = 'none';
-            document.getElementById('boton4').style.display = 'block';
+            document.getElementById('boton1').style.display = 'none';
+            document.getElementById('sel').style.display = 'block';
+            document.getElementById('boton2').style.display = 'block';
+
         }
     </script>
 
@@ -60,22 +61,13 @@
                 <p>Geekshubs <br>
                     Travels </p>
             </div>
-
-
-           
-                <button id="boton3" type="button" onclick="mostrar()">Menu</button>
-            
-
-            
-                <button id="boton4" type="button" onclick="ocultar()">Menu</button>
-            
-            <div class="sel" id="obj1" >
+            <div class="sel">
                 <a href="#inicio">Inicio</a>
                 <a href="#destinos">Destinos</a>
                 <a href="#quienesSomos">QuienesSomos</a>
-                <a href="#dondeEstamos">Donde Estamos</a>
+                <a href="#dondeEstamos">Donde estamos</a>
             </div>
-            <div class="socialMedia" id="obj1">
+            <div class="socialMedia">
                 <a href="https://twitter.com/geeks_academy" target="_blank"><img src="images/tt-ico.png"
                         alt="Twitter"></a>
                 <a href="#"> <img src="images/ws-ico.png" alt="WhatsApp"></a>
@@ -92,6 +84,43 @@
         </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
     </div>
 
+
+    <div class="movil">
+        <nav>
+            <div class="desplegable">
+                <div class="logo">
+                    <img src="images/iconoweb.png" alt="logo"><br>
+                    <p>Geekshubs <br>
+                        Travels </p>
+                </div>
+                <button id="boton1"  type="button" onclick="mostrar()">Menu</button>
+                <button id="boton2"  type="button" onclick="ocultar()">Menu</button>
+            </div>
+            <div class="sel" id="sel">
+
+
+                <div class="eleccion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#quienesSomos">QuienesSomos</a>
+                    <a href="#dondeEstamos">Donde estamos</a>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://twitter.com/geeks_academy" target="_blank"><img src="images/tt-ico.png"
+                            alt="Twitter"></a>
+                    <a href="#"> <img src="images/ws-ico.png" alt="WhatsApp"></a>
+                    <a href="https://www.facebook.com/geekshubsacademy/" target="_blank"><img src="images/fb-ico.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/geekshubs/" target="_blank"><img src="images/Instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/school/geekshubsacademy/" target="_blank"><img
+                            src="images/linkedIn.png" alt="linkedIn"></a>
+                    <a href="https://www.youtube.com/user/geekshubs" target="_blank"> <img src="images/YT.png"
+                            alt="Youtube"></a>
+                </div>
+            </div>
+        </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
     <header id="inicio">
 
 
@@ -196,8 +225,8 @@
         </div>
     </section>
     <!--------------------------------------------------------------------------->
-    <section>
-        <div class='micro' id="quienesSomos">
+    <section id="quienesSomos" class="quienesSomos">
+        <div class='micro'>
             <div class='quien'>
                 <h1>QUIEN SOMOS</h1>
                 <hr><br>

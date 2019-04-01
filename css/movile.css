@@ -5,7 +5,11 @@
     }  
     
 } 
+/* @media (max-width: 1280px) {
+    .nav {
 
+        flex-direction: column;
+    }
 
     footer,
     .contact {
@@ -24,58 +28,84 @@
     .ayuda {
         padding-left: 0;
     }
-}
+} */
 
 
 
 
 @media/* only screen and */(max-width : 1000px) {
 
-    nav {    
 
-        
-        /* align-items: flex-start; */
-        display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        /* flex-wrap: wrap;
-        flex-direction: row; */
-        /* width: ; */
-        position: sticky;
-        top: 0;
-        padding-left: 1rem;
-        background-color: rgba(0, 195, 255, 0.267);
-        z-index: 70;
-        /* background-size: cover; */
-        background-image: url('../images/nav.png');
-    }
+.movil {
     
-       
-        
-
-
- 
-
+    display: block;
+     display: flex;
+     position: sticky;
+    top: 0;
+    z-index: 70;
+    width: 100%;
     
+    position: sticky;
+    top: 0;
+    z-index: 70;
+    padding: 1rem;
+    background-color: rgba(0, 195, 255, 0.267);
+   /* background-color: red; */
+    background-size: cover;
+    background-image:  url('../images/nav.png');
+
+     
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav{
+    display: none;
+    
+}
+.sel{
+    display: none;
+    /* display: flex;
+    flex-direction: column; */
+}
+.desplegable{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+.eleccion{
+    display:flex;
+
+flex-direction: column;
+
+}
 
 
-    #boton4 {
+    #boton2 {
         /* display:block; */
         width: 100%;
         background-color:transparent;
         color:white;
         display: none; 
+        border:0;
+        outline:0 none;
     }
     /*ocultar boton al inicio*/
-    #boton3{
+    #boton1{
         width: 100%;
         background-color:transparent;
+        border:0;
         color:white;
-        display: block;}
+        outline:0 none;
+
+        /* display: block; */
+    }
     #obj2{
         display: block;}
-        #obj1{
-            display: none;}
+        
 
 
 
