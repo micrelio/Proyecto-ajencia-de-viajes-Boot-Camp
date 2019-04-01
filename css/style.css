@@ -9,7 +9,7 @@
 
 html,
 body {
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     /* margin: 0; no hace falta por el normalize*/
     /*haciendo esto 1 rem son 10 px*/
     font-size: 62.5%;
@@ -43,33 +43,96 @@ body {
 
 /* ----NAV---- */
 
-#boton3{
-    /* height: -100%; */
-    display: none;}
+#boton3 {
     
-    #obj2{
-        display: block;}
-        #obj1{
-            display: block;}
-   
-   
-   
+    display: none;
+}
+
+#boton4 {
+    display: none;
+}
+
+#obj2 {
+    display: block;
+}
+
+#obj1 {
+    display: block;
+}
+
+#boton4 {
+    display: none;
+}
 
 
+.nav{
+     width: 100%;
+     /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    /*align-content: space-between;
+    align-items: center; */
+    position: sticky;
+    top: 0;
+    z-index: 70;
+    padding: 1rem;
+    background-color: rgba(0, 195, 255, 0.267);
+   /* background-color: red; */
+    background-size: cover;
+    background-image:  url('../images/nav.png');
+}
 
 
 nav {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
-    padding-left: 1rem;
-    background-color: rgba(0, 195, 255, 0.267);
-    z-index: 70;
+    width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     background: fuchsia;
+     justify-content:space-between;
+     /* justify-content:space-around; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* padding-left: 1rem; */
+    /* background-color: rgba(0, 195, 255, 0.267); */
+   
     /* background-size: cover; */
-    background-image: url('../images/nav.png');
+    /* background-image: url('../images/nav.png'); */
+}
+
+.sel a { 
+    margin:0.5vw;
+    background: tomato;
+    font-style: italic;
+    font-size: 1.4vw;
+    color: white;
+    text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
+    /* display: block; */
+    /* margin-left: 45px; */
+    /* padding-top: 2.5rem; */
+    list-style: none;
+    position: relative;
+        
+}
+
+#obj1{
+    background:blue;
+}
+.socialMedia {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    /* background-color: red; */
+
+
+    /* padding-top: 3rem;
+    padding-right: 1.8rem; */
+}
+.socialMedia img {
+    width: 2.5vw;
+    margin:0.25rem
+
 }
 
 a:hover {
@@ -77,12 +140,17 @@ a:hover {
     /* background:red; */
 }
 
-.logo img {margin: 0;
+.logo{
+    background: #fef200
+    
+}
+.logo img {
+    /* margin: 0; */
     padding: 0.5rem 0 0.5rem;
     display: block;
     text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
     height: 5rem;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .logo p {
@@ -98,42 +166,10 @@ a:hover {
 
 
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
-nav li {
-    font-style: italic;
-    font-size: 1.4rem;
-    color: white;
-    text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
-    display: block;
-    margin-left: 45px;
-    padding-top: 2.5rem;
-    list-style: none;
-    position: relative;
-}
-
-.socialMedia {
-    
-    background-color: red;
-    
-    
-    /* padding-top: 3rem;
-    padding-right: 1.8rem; */
-}
-
-.socialMedia img {
-    width: 2.5rem;
-    
-}
 
 /* HEADER */
-header {   
-    
+header {
+
     background-image: url('../images/back.jpeg');
 
     color: white;
@@ -315,7 +351,7 @@ header button {
 
 
 /******************    Quien somos     ******************************************************************/
-.micro {
+.quienesSomos {
     background-size: cover;
     background-image: url('../images/travel_3.jpg');
     /*height: 500px;*/
@@ -486,37 +522,4 @@ footer button {
     font-size: 1.3rem;
     width: 53%;
     padding: 0.4rem 0.1rem 0.4rem 0.1rem;
-}
-
-@media (max-width: 1280px) {
-    .nav {
-
-        flex-direction: column;
-    }
-
-    footer,
-    .contact {
-        padding: 5rem;
-        flex-direction: column;
-    }
-
-    footer .ayuda,
-    .informacion,
-    .suscribete {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 2rem;
-    }
-
-    .ayuda {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 700px) {
-
-    nav {
-        font-size: 1rem;
-        flex-direction: column;
-    }
 }

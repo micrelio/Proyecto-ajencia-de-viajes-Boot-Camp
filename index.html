@@ -7,115 +7,111 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/movile.css" />
+    <!-- <link rel="stylesheet" href="css/movile.css" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <title>Agenci of travels </title>
 
     <script>
-            function ocultar() {
-                document.getElementById('obj1').style.display = 'none';
-                document.getElementById('obj2').style.display = 'block';
-                document.getElementById('boton4').style.display = 'none';
+        function ocultar() {
+            document.getElementById('obj1').style.display = 'none';
+            document.getElementById('obj2').style.display = 'block';
+            document.getElementById('boton4').style.display = 'none';
+        }
+
+        function mostrar() {
+            document.getElementById('obj1').style.display = 'block';
+            document.getElementById('obj2').style.display = 'none';
+            document.getElementById('boton4').style.display = 'block';
+        }
+    </script>
+
+
+    <!-- <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function plusSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-    
-            function mostrar() {
-                document.getElementById('obj1').style.display = 'block';
-                document.getElementById('obj2').style.display = 'none';
-                document.getElementById('boton4').style.display = 'block';
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
             }
-        </script>
+            slides[slideIndex - 1].style.display = "block";
 
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function plusSlides() {
-       var i;
-       var slides = document.getElementsByClassName("mySlides");
-       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-       }
-       slideIndex++;
-        if(slideIndex > slides.length) {slideIndex = 1}
-       slides[slideIndex-1].style.display = "block";
-      
-        setTimeout(showSlides,2000);
-}
-</script>
+            setTimeout(showSlides, 2000);
+        }
+    </script> -->
 
 
 
 </head>
 
 <body>
+
+    <div class="nav">
         <nav>
-                <!-- Aqui estamos iniciando la nueva etiqueta nav -->
-                <div class="logo">
-                    <img src="images/iconoweb.png" alt="logo"><br>
-                    <p>Geekshubs <br>
-                        Travels </p>
-                </div>
-                <ul class="nav">
-    
-                    <div id="obj2">
-                        <li> <button id="boton3" type="button" onclick="mostrar()">Menu</button></li>
-    
-                    </div>
-    
-                    <!-- <ul> -->
-                    <span id="obj1">
-                        <ul>
-                            <li> <button id="boton4" type="button" onclick="ocultar()">Menu</button> </li>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#destinos">Destinos</a></li>
-                            <li><a href="#quienesSomos">QuienesSomos</a></li>
-                            <li><a href="#dondeEstamos">Donde Estamos</a></li>
-                        </ul>
-                        <!-- </ul> -->
-    
-    
-    
-                </ul>
-                <div class="socialMedia">
-                    <a href="https://twitter.com/geeks_academy" target="_blank"><img src="images/tt-ico.png"
-                            alt="Twitter"></a>
-                    <a href="#"> <img src="images/ws-ico.png" alt="WhatsApp"></a>
-                    <a href="https://www.facebook.com/geekshubsacademy/" target="_blank"><img src="images/fb-ico.png"
-                            alt="Facebook"></a>
-                    <a href="https://www.instagram.com/geekshubs/" target="_blank"><img src="images/Instagram.png"
-                            alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/school/geekshubsacademy/" target="_blank"><img
-                            src="images/linkedIn.png" alt="linkedIn"></a>
-                    <a href="https://www.youtube.com/user/geekshubs" target="_blank"> <img src="images/YT.png"
-                            alt="Youtube"></a>
-                </div>
-    
-    
-                </span>
-            </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
-    
-    <header class="inicio" id="inicio">
+            <div class="logo">
+                <img src="images/iconoweb.png" alt="logo"><br>
+                <p>Geekshubs <br>
+                    Travels </p>
+            </div>
 
 
+           
+                <button id="boton3" type="button" onclick="mostrar()">Menu</button>
+            
 
+            
+                <button id="boton4" type="button" onclick="ocultar()">Menu</button>
+            
+            <div class="sel" id="obj1" >
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#quienesSomos">QuienesSomos</a>
+                <a href="#dondeEstamos">Donde Estamos</a>
+            </div>
+            <div class="socialMedia" id="obj1">
+                <a href="https://twitter.com/geeks_academy" target="_blank"><img src="images/tt-ico.png"
+                        alt="Twitter"></a>
+                <a href="#"> <img src="images/ws-ico.png" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com/geekshubsacademy/" target="_blank"><img src="images/fb-ico.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/geekshubs/" target="_blank"><img src="images/Instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/school/geekshubsacademy/" target="_blank"><img
+                        src="images/linkedIn.png" alt="linkedIn"></a>
+                <a href="https://www.youtube.com/user/geekshubs" target="_blank"> <img src="images/YT.png"
+                        alt="Youtube"></a>
+            </div>
 
-
-        
-        
-        <div>
-        
-        <h1>Viaja!</h1><br>
-        <p>Descubre lugares maravillosos!</p><br>
-        <button>Ver destinos</button>
+        </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
     </div>
+
+    <header id="inicio">
+
+
+
+
+
+
+
+        <div>
+
+            <h1>Viaja!</h1><br>
+            <p>Descubre lugares maravillosos!</p><br>
+            <button>Ver destinos</button>
+        </div>
     </header>
 
     <!--------------------------------------------------------------------------->
-    <section class="destinos" id="destinos">
+    <section id="destinos" class="destinos">
 
-
+        <!-- 
          <div class="slideshow-container">
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -158,10 +154,10 @@ function plusSlides() {
 
             
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+        </div> -->
 
 
-        <!-- <div>
+        <div>
             <div class="a">
                 <p>Save 90$ pay only</p>
                 <h3>795$</h3>
@@ -197,8 +193,8 @@ function plusSlides() {
                 <p>Save 375$ pay only</p>
                 <h3>999$</h3>
             </div><br> Tokyo
-        </div>-->
-    </section> 
+        </div>
+    </section>
     <!--------------------------------------------------------------------------->
     <section>
         <div class='micro' id="quienesSomos">
