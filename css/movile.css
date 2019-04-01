@@ -1,10 +1,10 @@
-/* @media (max-width: 1280px) {
+ @media (max-width: 1280px) {
     .quien {
        width: 90%;
      
     }  
     
-} */
+} 
 
 
 @media/* only screen and */(max-width : 1000px) {
@@ -70,11 +70,11 @@
         
         /* align-items: flex-start; */
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-content: space-around;
         /* flex-wrap: wrap;
         flex-direction: row; */
-        width: 50%;
+        /* width: ; */
         position: sticky;
         top: 0;
         padding-left: 1rem;
@@ -141,10 +141,12 @@ header li a {
         width: 2.5rem;
     }
 
-    #boton3 {
+    #boton4 {
         /* display:block; */
-        
-        
+        width: 100%;
+        background-color:transparent;
+        color:white;
+        display: none; 
     }
     /*ocultar boton al inicio*/
     #boton3{
