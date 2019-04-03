@@ -6,11 +6,18 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+
+/*configurar partials*/
 const hbs =require('hbs');
 
 const hbsUtils = require ('hbs-utils')(hbs);
 hbs.registerPartials(`${__dirname}/views/partials`);
 hbsUtils.registerWatchedPartials(`${__dirname}/views/partials`)
+/*configurar partials*/
+
+
+
 
 var app = express();
 
