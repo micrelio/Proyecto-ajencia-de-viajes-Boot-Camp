@@ -12,22 +12,12 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   res.render( 'index');
-    
-  //  res.render('footer');
-  
-  
 });
 
+router.get( '/registro', function ( req, res, next ) {
 
-// const hbsUtils = require ('hbs-utils')(hbs);
-// hbs.registerPartials('/partials');
-// hbsUtils.registerWatchedPartials('/partials')
-
-
-// const hbsUtils = require ('hbs-utils')(hbs);
-// hbs.registerPartials(`/views/partials`);
-// hbsUtils.registerWatchedPartials(`/views/partials`)
-
+  res.render( 'registro', { title: 'Login' } );
+} );
 
 module.exports = router;
 

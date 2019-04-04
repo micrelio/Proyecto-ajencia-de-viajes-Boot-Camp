@@ -116,7 +116,8 @@ nav {
     padding-right: 1.8rem; */
 }
 .socialMedia img {
-    width: 2.5vw;
+    /* width: 2.5vw; */
+    width: calc( 2rem + 1vw);
     margin:0.25rem
 
 }
@@ -132,25 +133,29 @@ a:hover {
 }
 .logo img {
     /* margin: 0; */
-    padding: 0.5rem 0 0.5rem;
+    padding: 0.5vw 0 0.5vw;
     display: block;
     text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
-    height: 5rem;
+    height:4vw;
+    
     margin: 0 auto;
 }
-
+/* font-size: calc( 5px + 1vw); */
 .logo p {
     margin: 0;
     padding-bottom: 0.5rem;
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 1.5vw;    line-height: 1;
     font-weight: bold;
     color: #141939;
     text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
     text-align: center;
 }
 
-
+.desplegable button img{
+    padding: 0.5vw 0 0.5vw;
+    height:calc( 5rem + 1vw);
+    float: right;
+}
 
 
 /* HEADER */
