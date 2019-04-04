@@ -66,10 +66,13 @@ body {
    /* background-color: red; */
     /* background-size: cover;
     background-image:  url('../images/nav.png'); */
+
 }
 
 
 nav {
+    /* position:absolute; */
+
     width: 100%;
      display: flex;
      align-items: center;
@@ -159,12 +162,25 @@ a:hover {
     /* padding: 0.5vw 0 0.5vw; */
     height: calc( 4rem + 2vh);
     float: right;
+    
 }
 
 .loger{
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: flex-end; */
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
     width: 100%;
+    /* overflow: unset; */
+    /* position: absolute; */
+    height: 0;
+    /* position:relative; */
+    top: 0;
+    z-index: 70;
 } 
-#boton3{
+#boton3,
+#boton4{
     /* width: 100%; */
     float:right;
      background-color:transparent;
@@ -172,11 +188,12 @@ a:hover {
         border:0;
         outline:0 none;
 }
-#boton3 img{
+#boton3 img,
+#boton4 img
+{
     margin: 0.2rem ;
     /* background:red; */
     height: calc( 4rem + 2vh);
-        float: right;
 
 }
 

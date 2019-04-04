@@ -24,6 +24,21 @@ router.get( '/login', function ( req, res, next ) {
   res.render( 'login', { title: 'Login' } );
 } );
 
+router.post( '/index', function ( req, res, next ) {
+
+  console.log( req.body );
+  // new User( req.body )
+  //     .save()
+  //     .then( () => {
+  //         console.log( 'registro valido' );
+
+  //         email.transporter.sendMail( {
+  //             to: req.body.email,
+  //             subject: 'Registro correcto',
+  //             html: 'Welcome!'
+  //         }, ( error, info ) => {
+  //             console.log(error, info);
+          } );
 
 module.exports = router;
 

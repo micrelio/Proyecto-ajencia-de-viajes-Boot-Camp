@@ -1,3 +1,6 @@
+
+
+// MENU
 function ocultar() {
     document.getElementById('sel').style.display = 'none';
     document.getElementById('boton1').style.display = 'block';
@@ -9,4 +12,8 @@ function mostrar() {
     document.getElementById('sel').style.display = 'block';
     document.getElementById('boton2').style.display = 'block';
 
+}
+
+mostrar(){
+    
 }
