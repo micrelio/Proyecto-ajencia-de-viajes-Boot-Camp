@@ -43,23 +43,29 @@
      position: sticky;
     top: 0;
     z-index: 70;
-    width: 100%;
+    /* width: 100%; */
     
-    position: sticky;
-    top: 0;
-    z-index: 70;
-    padding: 1rem;
-    background-color: rgba(0, 195, 255, 0.267);
-   /* background-color: red; */
+    flex-direction: column;
+
+    
+    /* background-color: rgba(0, 195, 255, 0.267);
+   background-color: red;
     background-size: cover;
-    background-image:  url('../images/nav.png');
+    background-image:  url('../images/nav.png'); */
 
      
 }
-nav{
+nav{  
+
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(0, 195, 255, 0.267);
+    background-color: red;
+     background-size: cover;
+     background-image:  url('../images/nav.png');
 }
 
 .nav{
@@ -108,6 +114,24 @@ flex-direction: column;
         
 
 
+        /* .loger{
+            width: 100%;
+        } */
+        /* #boton3 img{
+            margin: 0.2rem ;
+            background:red;
+            height: calc( 4rem + 2vh);
+                float: right;
+        
+        } */
+
+        #boton1 img,
+        #boton2 img
+        {
+             /* padding: 0.5vw 0 0.5vw;  */
+            height: calc( 4rem + 2vh);
+            float: right;
+        }
 
 
 

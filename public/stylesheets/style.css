@@ -61,11 +61,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 70;
-    padding: 1rem;
-    background-color: rgba(0, 195, 255, 0.267);
+    /* padding: 1rem; */
+    /* background-color: rgba(0, 195, 255, 0.267); */
    /* background-color: red; */
-    background-size: cover;
-    background-image:  url('../images/nav.png');
+    /* background-size: cover;
+    background-image:  url('../images/nav.png'); */
 }
 
 
@@ -81,10 +81,11 @@ nav {
     /* position: sticky; */
     /* top: 0; */
     /* padding-left: 1rem; */
-    /* background-color: rgba(0, 195, 255, 0.267); */
+    padding: 1rem;
+    background-color: rgba(0, 195, 255, 0.267);
    
-    /* background-size: cover; */
-    /* background-image: url('../images/nav.png'); */
+    background-size: cover;
+    background-image: url('../images/nav.png');
 }
 
 .sel a { 
@@ -133,10 +134,11 @@ a:hover {
 }
 .logo img {
     /* margin: 0; */
-    padding: 0.5vw 0 0.5vw;
+    /* padding: 0.5vw 0 0.5vw; */
     display: block;
-    text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
-    height:4vw;
+    /* text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white; */
+    height:calc( 4rem + 2vh);
+   
     
     margin: 0 auto;
 }
@@ -144,18 +146,40 @@ a:hover {
 .logo p {
     margin: 0;
     padding-bottom: 0.5rem;
-    font-size: 1.5vw;    line-height: 1;
+    font-size: calc( 1.5rem + 1vh);    line-height: 1;
     font-weight: bold;
     color: #141939;
     text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
     text-align: center;
 }
 
-.desplegable button img{
-    padding: 0.5vw 0 0.5vw;
-    height:calc( 5rem + 1vw);
+#boton1 img,
+#boton2 img
+{
+    /* padding: 0.5vw 0 0.5vw; */
+    height: calc( 4rem + 2vh);
     float: right;
 }
+
+.loger{
+    width: 100%;
+} 
+#boton3{
+    /* width: 100%; */
+    float:right;
+     background-color:transparent;
+        color:white;
+        border:0;
+        outline:0 none;
+}
+#boton3 img{
+    margin: 0.2rem ;
+    /* background:red; */
+    height: calc( 4rem + 2vh);
+        float: right;
+
+}
+
 
 
 /* HEADER */
@@ -387,7 +411,7 @@ header button {
 
 }
 
-button {
+.quienesSomos button {
     font-weight: bold;
     background-color: darkblue;
     color: yellow;
@@ -514,3 +538,7 @@ footer button {
     width: 53%;
     padding: 0.4rem 0.1rem 0.4rem 0.1rem;
 }
+
+
+/*       login    */
+

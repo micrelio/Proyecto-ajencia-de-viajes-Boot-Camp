@@ -1,0 +1,35 @@
+
+<h1>LOGIN VIEW</h1>
+<div>
+
+<form action="/login"
+    method="post">
+
+    <input type="email"
+
+        name="email"
+        placeholder="email">
+    <input type="password"
+
+        name="password"
+        placeholder="password">
+    <input type="submit"
+        value="login!">
+</form>
+</div>
+
+<div class="feedback">
+
+    {{#if error}}
+    <div class="error">
+        {{error}}
+    </div>
+    {{/if}}
+
+
+    {{#if message}}
+    <div class="message">
+        {{message}}
+    </div>
+    {{/if}}
+</div>

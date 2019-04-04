@@ -19,6 +19,12 @@ router.get( '/registro', function ( req, res, next ) {
   res.render( 'registro', { title: 'Login' } );
 } );
 
+router.get( '/login', function ( req, res, next ) {
+
+  res.render( 'login', { title: 'Login' } );
+} );
+
+
 module.exports = router;
 
 
