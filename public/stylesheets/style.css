@@ -220,7 +220,7 @@ header button {
 .a {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/beijing.JPG');
+    background-image: url('../images/beijing.jpg');
     height: 18em;
     width: 20em;
     position: relative;
@@ -268,7 +268,7 @@ header button {
 .b {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/buenos_aires.JPG');
+    background-image: url('../images/buenos_aires.jpg');
     height: 18em;
     width: 20em;
     position: relative;
@@ -278,7 +278,7 @@ header button {
 .c {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/ciudad_mexico.JPG');
+    background-image: url('../images/ciudad_mexico.jpg');
     height: 18em;
     width: 20em;
     position: relative;
@@ -288,7 +288,7 @@ header button {
 .d {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/madrid.JPG');
+    background-image: url('../images/madrid.jpg');
     height: 18em;
     width: 20em;
     position: relative;
@@ -298,7 +298,7 @@ header button {
 .e {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/new_york.JPG');
+    background-image: url('../images/new_york.jpg');
     height: 18em;
     width: 20em;
     position: relative;
@@ -308,7 +308,7 @@ header button {
 .f {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/tokyo.JPG');
+    background-image: url('../images/tokyo.jpg');
     height: 18em;
     width: 20em;
     position: relative;

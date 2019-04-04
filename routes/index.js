@@ -10,9 +10,9 @@ var router = express.Router();
 // });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-  // res.render( 'menu');
-   
+  // res.render('index', { title: 'Express' });
+  res.render( 'index');
+    
   //  res.render('footer');
   
   
