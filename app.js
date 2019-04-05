@@ -7,8 +7,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 // var hbs = require( 'express-handlebars');
+var session = require('express-session');
+
+var app = express()
 
 
+var winston = require( './config/winston' );
 
 /*configurar partials*/
 const hbs =require('hbs');
@@ -20,15 +24,14 @@ hbsUtils.registerWatchedPartials(`${__dirname}/views/partials`)
 
 
 
-var app = express();
+;
 
 // view engine setup
 
 app.set('views', path.join(__dirname, 'views'));
-
 app.set('view engine', 'hbs');
 
-
+app.use( logger( 'dev', { stream: winston.stream } ) );
 
 
 app.use(logger('dev'));

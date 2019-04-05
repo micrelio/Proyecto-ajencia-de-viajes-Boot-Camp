@@ -1,5 +1,3 @@
-
-
 // MENU
 function ocultar() {
     document.getElementById('sel').style.display = 'none';
@@ -16,32 +14,32 @@ function mostrar() {
 
 // function prueba() {
 //     console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
-    
+
 // }
 
 document.addEventListener('DOMContentLoaded', function () {
     // const counterNode = document.querySelector('boton3');
     const baseApiUrl = 'http://localhost:3000';
-  
+
     document.querySelector(' #boton3').addEventListener('click', () => {
         // reset counter
         //console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
-         fetch(baseApiUrl + '/login' , {
-                method: 'GET', })
-                
-
-
-
-        //  return fetch(baseApiUrl + '/tasks', {
-        //     method: 'PUT',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //         color
-        //     })
+        fetch(baseApiUrl + '/login', {
+                method: 'GET',
+            })
+            .then(window.location = "login")
     })
+
+    document.querySelector(' #boton4').addEventListener('click', () => {
+        fetch(baseApiUrl + '/registro', {
+                method: 'GET',
+            })
+            .then(window.location = "registro")
+
     })
-  
-  
+
+
+
+
+
+})

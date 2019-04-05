@@ -180,20 +180,23 @@ a:hover {
     z-index: 70;
 } 
 #boton3,
-#boton4{
+#boton4,
+#boton5{
     
     /* width: 100%; */
     /* margin: 0.2rem ; */
     margin: 0.5vw 0 0 0;
-     /* background-color:transparent; */
         /* color:white; */
         border:0;
         outline:0 none;
         background-color:transparent;
+             background-color:red;
+
 
 }
 #boton3 img,
-#boton4 img
+#boton4 img,
+#boton5 img
 {    
 
      border: 2px solid black;
