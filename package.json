@@ -13,13 +13,13 @@
     "express-generator": "^4.16.0",
     "express-session": "^1.15.6",
     "hbs": "^4.0.3",
+    "hbs-utils": "0.0.4",
     "http-errors": "~1.6.2",
+    "mongoose": "^5.4.20",
     "morgan": "~1.9.0",
+    "multer": "^1.4.1",
     "nodemailer": "^6.0.0",
     "nodemon": "^1.18.10",
-    "winston": "^3.2.1",
-    "multer": "^1.4.1",
-    "mongoose": "^5.4.20"
-
+    "winston": "^3.2.1"
   }
 }
