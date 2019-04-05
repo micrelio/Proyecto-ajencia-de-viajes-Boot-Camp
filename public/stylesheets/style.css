@@ -174,25 +174,32 @@ a:hover {
     width: 100%;
     /* overflow: unset; */
     /* position: absolute; */
-    height: 0;
+    /* height: 0; */
     /* position:relative; */
     top: 0;
     z-index: 70;
 } 
 #boton3,
 #boton4{
+    
     /* width: 100%; */
-    float:right;
-     background-color:transparent;
-        color:white;
+    /* margin: 0.2rem ; */
+    margin: 0.5vw 0 0 0;
+     /* background-color:transparent; */
+        /* color:white; */
         border:0;
         outline:0 none;
+        background-color:transparent;
+
 }
 #boton3 img,
 #boton4 img
-{
-    margin: 0.2rem ;
+{    
+
+     border: 2px solid black;
+    border-radius: 5px;
     /* background:red; */
+    padding: 0.5em;
     height: calc( 4rem + 2vh);
 
 }

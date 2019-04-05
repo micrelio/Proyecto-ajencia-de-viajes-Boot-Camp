@@ -9,36 +9,47 @@ var router = express.Router();
 
 // });
 
+// router.get('/', function(req, res, next) {
+//   // res.render('main', { title: 'Express' });
+//   res.render( 'main');
+// });
+//res.render('home', {layout: 'default', template: 'home-template'});
+
+
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-  res.render( 'index');
+  // res.render('main', {layout: 'layout', template: 'main-template'});
+  res.render('main', {layout: 'layout', template: 'main-template'});
 });
 
+
 router.get( '/registro', function ( req, res, next ) {
+// console.log(req.body);
 
   res.render( 'registro', { title: 'Login' } );
 } );
 
-router.get( '/login', function ( req, res, next ) {
 
-  res.render( 'login', { title: 'Login' } );
+router.get( '/login', function ( req, res, next ) {
+console.log(res);
+// res.render('login');
+res.render('login', {layout: 'layout', template: 'login-template'});
+
+
+  // res.render( 'login', { title: 'Login' } );
 } );
 
-router.post( '/index', function ( req, res, next ) {
 
-  console.log( req.body );
-  // new User( req.body )
-  //     .save()
-  //     .then( () => {
-  //         console.log( 'registro valido' );
 
-  //         email.transporter.sendMail( {
-  //             to: req.body.email,
-  //             subject: 'Registro correcto',
-  //             html: 'Welcome!'
-  //         }, ( error, info ) => {
-  //             console.log(error, info);
-          } );
+
+
+
+
+
+// router.post( '/menu', function ( req, res, next ) {
+//   console.log( 'AAAAAAAAAAAAAAA' );
+//   console.log( req.body );
+  
+//           } );
 
 module.exports = router;
 

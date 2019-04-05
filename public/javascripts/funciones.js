@@ -14,6 +14,33 @@ function mostrar() {
 
 }
 
-mostrar(){
+// function prueba() {
+//     console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
     
-}
+// }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // const counterNode = document.querySelector('boton3');
+    const baseApiUrl = 'http://localhost:3000';
+  
+    document.querySelector(' #boton3').addEventListener('click', () => {
+        // reset counter
+        console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
+         fetch(baseApiUrl + '/login', {
+                method: 'GET'})
+
+
+
+        //  return fetch(baseApiUrl + '/tasks', {
+        //     method: 'PUT',
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //         color
+        //     })
+    })
+    })
+  
+  
