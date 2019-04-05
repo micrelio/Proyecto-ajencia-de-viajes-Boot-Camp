@@ -25,9 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
     document.querySelector(' #boton3').addEventListener('click', () => {
         // reset counter
-        console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
-         fetch(baseApiUrl + '/login', {
-                method: 'GET'})
+        //console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
+         fetch(baseApiUrl + '/login' , {
+                method: 'GET', })
+                
 
 
 
