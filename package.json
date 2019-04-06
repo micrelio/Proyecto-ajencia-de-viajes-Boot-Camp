@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
+    
   },
   "dependencies": {
     "app-root-path": "^2.2.1",
