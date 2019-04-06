@@ -17,7 +17,46 @@ router.get( '/registro', function ( req, res, next ) {
   res.render('registro');
  } );
 
- router.post( '/registro', function ( req, res, next ) {
+
+
+
+router.get( '/login', function ( req, res, next ) {
+ //console.log(req.body);
+ 
+  
+  res.render( 'login' );
+ 
+  
+} );
+
+
+
+
+
+//   users
+router.post( '/login', function ( req, res, next ) {
+
+  console.log( req.body );
+
+  User.findOne( req.body )
+      .then( ( user ) => {
+          console.log( 'login valido', user );
+          if ( user ) {
+              res.render( 'login', { message: 'Bienvenido al castillo! ' + user.email } );
+          } else {
+              res.render( 'login', { error: 'credenciales incorrectos' } );
+
+          }
+      } )
+      .catch( ( err ) => {
+          console.log( 'login invalido', err );
+          res.render( 'login', { error: 'Ups algo no ha ido bien.  vuelva intentarlo más tarde' } );
+
+      } )
+} );
+
+
+router.post( '/registro', function ( req, res, next ) {
 
   console.log( req.body );
   new User( req.body )
@@ -40,36 +79,6 @@ router.get( '/registro', function ( req, res, next ) {
 } );
 
 
-router.get( '/login', function ( req, res, next ) {
- //console.log(req.body);
- 
-  
-  res.render( 'login' );
- 
-  
-} );
-
-
-router.post( '/login', function ( req, res, next ) {
-
-  console.log( req.body );
-
-  User.findOne( req.body )
-      .then( ( user ) => {
-          console.log( 'login valido', user );
-          if ( user ) {
-              res.render( 'login', { message: 'Bienvenido al castillo! ' + user.email } );
-          } else {
-              res.render( 'login', { error: 'credenciales incorrectos' } );
-
-          }
-      } )
-      .catch( ( err ) => {
-          console.log( 'login invalido', err );
-          res.render( 'login', { error: 'Ups algo no ha ido bien.  vuelva intentarlo más tarde' } );
-
-      } )
-} );
 
 router.get('/users', (req, res) => {
   User.find({}).then(users => {
@@ -78,6 +87,8 @@ router.get('/users', (req, res) => {
       res.status(500).send(err)
   })
 });
+
+
 module.exports = router;
 
 
