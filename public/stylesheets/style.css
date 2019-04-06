@@ -7,12 +7,25 @@
         url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
-html,
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
 body {
+    min-width: 350px;
+    /* height: -10rem; */
+    /* margin:0; */
+    font-family: Arial;
+    /* line-height: 1.6; */
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+
     /* background-color: rosybrown; */
     /* margin: 0; no hace falta por el normalize*/
     /*haciendo esto 1 rem son 10 px*/
-    font-size: 62.5%;
+
     /* Aquí irán los estilos que añada Jose Antonio*/
     /* ya estoy aquí wey */
 }
@@ -30,16 +43,10 @@ p {
 
 
 
-
 /*****************************************************     cabecera          **********************************************************************/
 
 
 
-body {
-    font-family: Arial;
-    /* line-height: 1.6; */
-    background-repeat: no-repeat;
-}
 
 /* ----NAV---- */
 
@@ -51,19 +58,20 @@ body {
 
 
 
-.nav{
-     width: 100%;
-     /* display: flex;
+.nav {
+    width: 100%;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row; */
     /*align-content: space-between;
     align-items: center; */
     position: sticky;
     top: 0;
-    z-index: 70;
+    z-index: 10;
+
     /* padding: 1rem; */
     /* background-color: rgba(0, 195, 255, 0.267); */
-   /* background-color: red; */
+    /* background-color: red; */
     /* background-size: cover;
     background-image:  url('../images/nav.png'); */
 
@@ -74,28 +82,28 @@ nav {
     /* position:absolute; */
 
     width: 100%;
-     display: flex;
-     align-items: center;
-     flex-direction: row;
-     flex-wrap: wrap;
-     /* background: fuchsia; */
-     justify-content:space-between;
-     /* justify-content:space-around; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background: fuchsia; */
+    justify-content: space-between;
+    /* justify-content:space-around; */
     /* position: sticky; */
     /* top: 0; */
     /* padding-left: 1rem; */
     padding: 1rem;
     background-color: rgba(0, 195, 255, 0.267);
-   
+
     background-size: cover;
     background-image: url('../images/nav.png');
 }
 
-.sel a { 
-    margin:0.5vw;
+.sel a {
+    margin: 0.5vw;
     /* background: tomato; */
     font-style: italic;
-    font-size: calc( 5px + 1vw);
+    font-size: calc(5px + 1vw);
     color: white;
     text-shadow: 2px 2px 0.1rem black, 3px 5px 0.5rem black, -2px -2px 0.4rem black;
     /* display: block; */
@@ -103,12 +111,13 @@ nav {
     /* padding-top: 2.5rem; */
     list-style: none;
     position: relative;
-        
+
 }
 
-#obj1{
-    background:blue;
+#obj1 {
+    background: blue;
 }
+
 .socialMedia {
     display: flex;
     /* flex-wrap: wrap;
@@ -119,11 +128,11 @@ nav {
     /* padding-top: 3rem;
     padding-right: 1.8rem; */
 }
+
 .socialMedia img {
     /* width: 2.5vw; */
-    width: calc( 2rem + 1vw);
-    margin:0.25rem
-
+    width: calc(2rem + 1vw);
+    margin: 0.25rem
 }
 
 a:hover {
@@ -131,25 +140,28 @@ a:hover {
     /* background:red; */
 }
 
-.logo{
+.logo {
     /* background: #fef200 */
 
 }
+
 .logo img {
     /* margin: 0; */
     /* padding: 0.5vw 0 0.5vw; */
     display: block;
     /* text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white; */
-    height:calc( 4rem + 2vh);
-   
-    
+    height: calc(4rem + 2vh);
+
+
     margin: 0 auto;
 }
+
 /* font-size: calc( 5px + 1vw); */
 .logo p {
     margin: 0;
     padding-bottom: 0.5rem;
-    font-size: calc( 1.5rem + 1vh);    line-height: 1;
+    font-size: calc(1.5rem + 1vh);
+    line-height: 1;
     font-weight: bold;
     color: #141939;
     text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white;
@@ -157,15 +169,14 @@ a:hover {
 }
 
 #boton1 img,
-#boton2 img
-{
+#boton2 img {
     /* padding: 0.5vw 0 0.5vw; */
-    height: calc( 4rem + 2vh);
+    height: calc(4rem + 2vh);
     float: right;
-    
+
 }
 
-.loger{
+.loger {
     display: flex;
     /* align-items: center; */
     /* flex-direction: flex-end; */
@@ -178,32 +189,33 @@ a:hover {
     /* position:relative; */
     top: 0;
     z-index: 70;
-} 
+}
+
 #boton3,
 #boton4,
-#boton5{
-    
+#boton5 {
+
     /* width: 100%; */
     /* margin: 0.2rem ; */
     margin: 0.5vw 0 0 0;
-        /* color:white; */
-        border:0;
-        outline:0 none;
-        background-color:transparent;
-             background-color:red;
+    /* color:white; */
+    border: 0;
+    outline: 0 none;
+    background-color: transparent;
+    /* background-color: red; */
 
 
 }
+
 #boton3 img,
 #boton4 img,
-#boton5 img
-{    
+#boton5 img {
 
-     border: 2px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     /* background:red; */
     padding: 0.5em;
-    height: calc( 4rem + 2vh);
+    height: calc(4rem + 2vh);
 
 }
 
@@ -211,29 +223,27 @@ a:hover {
 
 /* HEADER */
 header {
-
-    background-image: url('../images/back.jpeg');
-
-    color: white;
-    padding: 3rem 4rem 6rem 4rem;
-
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-size: cover;
-    /* height: 100%;
-    width: 100%; */
+
+
+    /* background-image: url('../images/back.jpeg') ; */
+    /* height: 30rem; */
+    color: white;
+
 }
 
 header h1 {
-    margin-left: 30%;
+    /* margin-left: 30%; */
     font-weight: bold;
     font-size: 4rem;
 }
 
 header p {
-    margin-left: 30%;
+    /* margin-left: 30%; */
     margin-bottom: 1rem;
     font-size: 2.5rem;
 }
@@ -246,9 +256,22 @@ header button {
     font-style: italic;
     text-align: center;
     font-size: 1.5rem;
-    width: 20%;
-    margin-left: 43%;
+    font-weight: bolder;
+    width: 30%;
     padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+    border-radius:  5px ;
+    border: 2px solid black;
+}
+
+header img {
+    position: absolute;
+    max-height: 100%;
+    /* height: 120%; */
+}
+
+header div {
+    margin:7rem;
+    position: relative;
 }
 
 /**********************************           cabecera      ****************************************************************/
@@ -257,6 +280,7 @@ header button {
 /*************************************    DESTINOS         ****************************************************/
 
 .destinos {
+    position: relative;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -520,13 +544,21 @@ header button {
 
 footer {
     padding: 1.5rem;
+    width: 100%;
     font-size: 1.4rem;
     color: white;
-    background-color: #141939;
+    /* background-color: #141939; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    align-self: flex-end;
+    /* position: sticky; */
+    bottom: 0;
+    z-index: 5;
+    background-color: rgba(0, 195, 255, 0.267);
+
+    background-size: cover;
+    background-image: url('../images/nav.png');
 }
 
 footer .ayuda,
@@ -569,3 +601,39 @@ footer button {
 
 /*       login    */
 
+.unico {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+
+    /* align-self: center; */
+    /* align-content: center ; */
+    /* flex-direction: column; */
+    margin-top: -7rem;
+    padding: 11.5%;
+    /* height: 100vh; */
+    /* background-color: red; */
+    z-index: 5;
+    background: url('../images/back.jpeg ');
+    background-size: cover;
+}
+
+.formulario {
+    /* display: flex;
+align-self: center; */
+    /* align-items: center; */
+    /* height:100%; */
+    /* background: black; */
+    background: rgba(0, 0, 0, .7);
+    padding: 3rem
+}
+
+.iniciar {
+    background: orange;
+    width: 5rem;
+}
+
+.formulario input {
+    /* width: 15vw; */
+    margin: 0.5rem;
+
+}

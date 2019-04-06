@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // const counterNode = document.querySelector('boton3');
     const baseApiUrl = 'http://localhost:3000';
 
+
     document.querySelector(' #boton3').addEventListener('click', () => {
         // reset counter
         //console.log('EEEEEEEEEEEEEEEEEEEEEEEE');
@@ -35,6 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 method: 'GET',
             })
             .then(window.location = "registro")
+    })
+
+
+    document.querySelector('#boton5').addEventListener('click', () => {
+        fetch(baseApiUrl + '/', {
+                method: 'GET',
+            })
+            .then(window.location = "/")
 
     })
 

@@ -3,29 +3,29 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/reset.css" />
-    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link rel="stylesheet" href="/stylesheets/movile.css" />
-    {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> --}}
-    <script type="text/javascript" src="/javascripts/funciones.js"></script>
-        {{!-- <script type="text/javascript" src="../routes/index.js"></script> --}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"> --}}
+  <link rel="stylesheet" href="/stylesheets/reset.css" />
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/movile.css" />
+  <script type="text/javascript" src="/javascripts/funciones.js"></script>
+  {{!-- <script type="text/javascript" src="../routes/index.js"></script> --}}
 
-    {{!-- <script type="text/javascript">
-	mostrar();
-  ocultar();
-</script> --}}
-    <title>{{title}}</title>
-    {{!-- <link rel='stylesheet' href='/stylesheets/style.css' /> --}}
-  </head>
+  {{!-- <script type="text/javascript">
+    mostrar();
+    ocultar();
+  </script> --}}
+  <title>{{title}}</title>
+  {{!-- <link rel='stylesheet' href='/stylesheets/style.css' /> --}}
+</head>
 
-<body class="{{template}}">
+<body>
   {{>menu}}
 
   {{{body}}}
-  
+
   {{>footer}}
 </body>
 

@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-const winston = require( '../config/winston.js' );
 
 /*localhost:3000/    */
 /* GET home page. */
