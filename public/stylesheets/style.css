@@ -623,13 +623,18 @@ footer button {
 
 .unico {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: -7rem;
     padding: 11.5%;
     z-index: 5;
     background: url('../images/back.jpeg ');
     background-size: cover;
 }
-
+.unico h1{
+font-size: calc(2.5rem + 1vw);
+color: white;
+}
 .formulario {
     background: rgba(0, 0, 0, .7);
     padding: 3rem
