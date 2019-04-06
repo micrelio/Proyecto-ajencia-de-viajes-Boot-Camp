@@ -637,7 +637,8 @@ footer button {
 
 .iniciar {
     background: orange;
-    width: 5rem;
+    padding: 0.2rem;
+    min-width: 5rem;
 }
 
 .formulario input {
