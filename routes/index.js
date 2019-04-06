@@ -25,16 +25,9 @@ router.get( '/registro', function ( req, res, next ) {
       .then( () => {
           console.log( 'registro valido' );
 
-          email.transporter.sendMail( {
-              to: req.body.email,
-              subject: 'Registro correcto',
-              html: 'Welcome!'
-          }, ( error, info ) => {
-              console.log(error, info);
-          } );
+        
 
-
-          res.render( 'register', { message: 'Registro válido. Ya puedes hacer login' } );
+          res.render( 'registro', { message: 'Registro válido. Ya puedes hacer login' } );
 
 
       } )
