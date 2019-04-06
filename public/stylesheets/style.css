@@ -10,10 +10,11 @@
 html {
     font-size: 62.5%;
     height: 100%;
+    /* min-width: 368px; */
 }
 
 body {
-    min-width: 350px;
+    /* min-width: 350px; */
     /* height: -10rem; */
     /* margin:0; */
     font-family: Arial;
@@ -94,6 +95,7 @@ nav {
     /* padding-left: 1rem; */
     padding: 1rem;
     background-color: rgba(0, 195, 255, 0.267);
+    /* background-color: red; */
 
     background-size: cover;
     background-image: url('../images/nav.png');
@@ -120,14 +122,7 @@ nav {
 
 .socialMedia {
     display: flex;
-    /* flex-wrap: wrap;
-    flex-direction: row; */
-    /* background-color: red; */
-
-
-    /* padding-top: 3rem;
-    padding-right: 1.8rem; */
-}
+    }
 
 .socialMedia img {
     /* width: 2.5vw; */
@@ -141,26 +136,29 @@ a:hover {
 }
 
 .logo {
+    /* height: calc(2rem + 1vw); */
+    /* float: right; */
     /* background: #fef200 */
+    /* position: absolute; */
 
 }
 
 .logo img {
     /* margin: 0; */
     /* padding: 0.5vw 0 0.5vw; */
-    display: block;
+    /* display: block; */
     /* text-shadow: 2px 2px 0.1rem white, 3px 5px 0.5rem white, -2px -2px 0.4rem white; */
-    height: calc(4rem + 2vh);
+    height: calc(2rem + 1vw);
 
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* font-size: calc( 5px + 1vw); */
 .logo p {
     margin: 0;
     padding-bottom: 0.5rem;
-    font-size: calc(1.5rem + 1vh);
+    font-size: calc(1rem + 0.5vw);
     line-height: 1;
     font-weight: bold;
     color: #141939;
@@ -168,13 +166,7 @@ a:hover {
     text-align: center;
 }
 
-#boton1 img,
-#boton2 img {
-    /* padding: 0.5vw 0 0.5vw; */
-    height: calc(4rem + 2vh);
-    float: right;
 
-}
 
 .loger {
     display: flex;
@@ -214,8 +206,8 @@ a:hover {
     border: 2px solid black;
     border-radius: 5px;
     /* background:red; */
-    padding: 0.5em;
-    height: calc(4rem + 2vh);
+    padding: 0.5rem;
+    width: calc(3rem + 2vw);
 
 }
 
@@ -265,8 +257,9 @@ header button {
 
 header img {
     position: absolute;
-    max-height: 100%;
+    height: 80%;
     /* height: 120%; */
+    width: 100%;
 }
 
 header div {
@@ -420,13 +413,14 @@ header div {
 .quienesSomos {
     background-size: cover;
     background-image: url('../images/travel_3.jpg');
+    background-size: cover;
     /*height: 500px;*/
     padding: 50px;
 }
 
 .quien {
     background-color: whitesmoke;
-    padding: 30px;
+    padding: 5vw;
     text-align: justify;
     width: 40%;
     /*height: 400px;*/
@@ -435,7 +429,7 @@ header div {
 .quien hr {
     background-color: gold;
     height: 5px;
-    width: 50%;
+    width: 90%;
     float: left;
 
 }
@@ -443,7 +437,7 @@ header div {
 .quien h1 {
     font-weight: bold;
     font-style: italic;
-    font-size: 1.6rem;
+    font-size:calc(2rem + 1vw) ;
     color: darkblue;
 
 
@@ -452,6 +446,7 @@ header div {
 
 .quien p {
     color: darkblue;
+    font-size:calc(0.5rem + 1vw) ;
 
     padding: 2em;
 }
@@ -466,7 +461,8 @@ header div {
     font-weight: bold;
     background-color: darkblue;
     color: yellow;
-    padding: 10px;
+    padding:2rem;
+    /* width: 2rem; */
 }
 
 
@@ -478,48 +474,38 @@ header div {
 /***********************       Contacto    *********************************************************************/
 .contact {
      display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* align-content: center; */
-    /* align-items: center; */
-    justify-content: space-around;
-
-    flex-direction: row;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    /* align-self: flex-end; */
+   justify-content: space-around;
+ flex-direction: row;
+    flex-wrap: nowrap;
     align-content: space-around;
-    background-color: #220786;
+    /* background-color: #220786; */
     padding: 4rem 
 }
 
 .mapa{
-    height: 30vw ;
+    /* height: 30vw; */
     background: orange;
     /* padding: 2vw; */
     width: 30%;
-    /* margin: 3vw; */
-
 }
 .contactForm {
-    height:30vw ;
+    display: flex;
+   
+    justify-content: center;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    
     padding: 1vw;
-    background: red;
-    width: 30%;
-    /* height: 100%; */
+    /* background: red; */
+ 
 
 }
 .contactForm p{
-    font-size: 0.7vw;
-    background-color: #220786;
+    font-size: 1.5rem;
+    /* background-color: #220786; */
 
-}
-
-.mapa img {
-    /* margin-left: 9.5rem; */
-    /* display: block; */
-    width: 100%;
-    height: 100%;
 }
 
 .barraAzul::before {
@@ -538,31 +524,33 @@ header div {
 
 
 .contactForm input {
-    font-size: 0.7vw;
-    margin: 0.4vw;
-    width: 40%;
+    font-size: 1rem;
+    margin: 0.4rem;
+    /* width: 40%; */
     /* padding: 0.6vw; */
 }
 
-.contactForm textarea {
-    font-size: 0.7vw;
+.contactForm textarea { 
+    font-size: 1rem;
     margin: 0.4rem;
-    /* padding: 0.8rem; */
-    width: 84%;
-}
+    padding: 0.8rem;
+    width: 100%;
+ }
 
 .enviarSms {
-    
+
     font-style: italic;
     text-align: center;
     color: black;
     background-color: #fef200;
     font-size: 1.3rem;
-    padding:0.2rem;
+    padding:0.5rem;
+    /* width: 30%; */
+
 }
 
 .fieldsWarning {
-    font-size: .7rem;
+    font-size: 1rem;
 }
 
 /******************** Contacto ******************************/
@@ -635,26 +623,14 @@ footer button {
 
 .unico {
     display: flex;
-    /* flex-wrap: wrap-reverse; */
-
-    /* align-self: center; */
-    /* align-content: center ; */
-    /* flex-direction: column; */
     margin-top: -7rem;
     padding: 11.5%;
-    /* height: 100vh; */
-    /* background-color: red; */
     z-index: 5;
     background: url('../images/back.jpeg ');
     background-size: cover;
 }
 
 .formulario {
-    /* display: flex;
-align-self: center; */
-    /* align-items: center; */
-    /* height:100%; */
-    /* background: black; */
     background: rgba(0, 0, 0, .7);
     padding: 3rem
 }
