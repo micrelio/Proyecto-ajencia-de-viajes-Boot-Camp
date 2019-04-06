@@ -1,6 +1,6 @@
 const mongoose = require('../config/mongo');
 
-const UserSchema = new mongoose.Schema( {
+const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -12,8 +12,8 @@ const UserSchema = new mongoose.Schema( {
         minlength: 8,
     }
 
-} );
+});
 
-const User = mongoose.model( 'user', UserSchema )
+const User = mongoose.model('user', UserSchema)
 
 module.exports = User;

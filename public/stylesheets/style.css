@@ -259,7 +259,7 @@ header button {
     font-weight: bolder;
     width: 30%;
     padding: 0.4rem 0.1rem 0.4rem 0.1rem;
-    border-radius:  5px ;
+    border-radius: 5px;
     border: 2px solid black;
 }
 
@@ -270,7 +270,7 @@ header img {
 }
 
 header div {
-    margin:7rem;
+    margin: 7rem;
     position: relative;
 }
 
