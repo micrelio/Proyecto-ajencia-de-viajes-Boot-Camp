@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     document.querySelector(' #boton4').addEventListener('click', () => {
-        //No hace falta hacer fetch, hace un get con el evento
+        //No hace falta hacer fetch, al cambiar de pagina hace una llamada ya que lo muestra en navegador con get
 
 
 
