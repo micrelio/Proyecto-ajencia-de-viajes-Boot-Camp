@@ -1,4 +1,4 @@
- @media (max-width: 1000px) {
+ @media (max-width: 991.99px) {
      .quien {
          width: 90%;
 
@@ -8,7 +8,7 @@
 
 
 
- @media only screen and (max-width : 1000px) {
+ @media only screen and (max-width : 991.99px) {
 
 header img{
     width: 100%;

@@ -32,10 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     document.querySelector(' #boton4').addEventListener('click', () => {
-        fetch(baseApiUrl + '/registro', {
-                method: 'GET',
-            })
-            .then(window.location = "registro")
+        //No hace falta hacer fetch, hace un get con el evento
+
+
+
+
+        // fetch(baseApiUrl + '/registro', {
+        //         method: 'GET',
+        //     })
+        //     .then(window.location = "registro")
+        window.location = "registro"
     })
 
 
